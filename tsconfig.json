@@ -1,0 +1,50 @@
+{	"extends": "./.svelte-kit/tsconfig.json",
+	"compilerOptions": {
+		"target": "es2020",
+		"useDefineForClassFields": true,
+		"module": "es2020",
+		"baseUrl": ".",
+		"moduleResolution": "node",
+		"strict": true,
+		"esModuleInterop": true,
+		"forceConsistentCasingInFileNames": true,
+		"resolveJsonModule": true,
+		"skipLibCheck": true,
+		"sourceMap": true,
+		/**
+		 * Typecheck JS in `.svelte` and `.js` files by default.
+		 * Disable checkJs if you'd like to use dynamic types in JS.
+		 * Note that setting allowJs false does not prevent the use
+		 * of JS in `.svelte` files.
+		 */
+		"allowJs": true,
+		"checkJs": true,
+		"paths": {
+			"$src": ["src"],
+			"$src/*": ["src/*"],
+			"$api": ["src/api"],
+			"$api/*": ["src/api/*"],
+			"$static":[ "static"],
+			"$images":[ "static/images"],
+			"$libs": ["src/libs"],
+			"$libs/*":["src/libs/*"],
+			"$components": ["src/components/"],
+			"$components/*": ["src/components/*"],
+			"$assets": ["src/assets"],
+			"$layouts": ["src/layouts/"],
+			"$routes": ["src/routes/"],
+			"$routes/*": ["src/routes/*"],
+			"$gen": ["src/gen"],
+			"$gen/*": ["src/gen/*"],
+			"$stores": ["src/stores"],
+			"$stores/*": ["src/stores/*"],
+			"$types/": ["src/libs/types"],
+			"$types/*": ["src/libs/types/*"],
+			"$utils/": ["src/libs/utils"],
+			"$utils/*": ["src/libs/utils/*"]
+		}
+	}
+}
+
+
+		

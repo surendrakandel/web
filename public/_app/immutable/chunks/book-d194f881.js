@@ -1,0 +1,1 @@
+import"./shipment_details-8d6c3526.js";import{n as t,a as i}from"./booking_store-77b6c636.js";var n=(r=>(r[r.pickup=0]="pickup",r[r.delivery=1]="delivery",r))(n||{});function o(r){return r.toString()=="0"?t():i()}export{n as b,o as n};
